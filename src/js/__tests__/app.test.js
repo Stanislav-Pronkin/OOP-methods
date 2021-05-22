@@ -58,7 +58,6 @@ test('levelUp', () => {
   const character = new Bowerman('Bob', 'Bowerman');
 
   character.health = 0;
-  // character.levelUp();
   expect(() => { character.levelUp(); }).toThrow('нельзя повысить левел умершего');
 });
 
@@ -66,7 +65,6 @@ test('levelUp', () => {
   const character = new Bowerman('Bob', 'Bowerman');
 
   character.health = -5;
-  // character.levelUp();
   expect(() => { character.levelUp(); }).toThrow('нельзя повысить левел умершего');
 });
 
